@@ -11,7 +11,7 @@ public class AccountReport_TC_14 {
 
 
 	public static void main(String[] args) throws InterruptedException{
-		System.out.println("Account Report");
+		System.out.println("Account  Report");
 		System.setProperty("webdriver.chrome.driver","C:\\Jyothi\\drivers\\chromedriver.exe");
 		WebDriver driver;
 		driver = new ChromeDriver();
