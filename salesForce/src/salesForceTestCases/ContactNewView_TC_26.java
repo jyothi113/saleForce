@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ContactNewView_TC_26 {
 
-	public static void main(String[] args) throws InterruptedException {
+		public static void main(String[] args) throws InterruptedException {
 		System.out.println("Create New View");
 		System.setProperty("webdriver.chrome.driver","C:\\Jyothi\\drivers\\chromedriver.exe");
 		WebDriver driver;

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BlockingEvent_TC_36 {
 
-	public static void main(String[] args) throws InterruptedException {
+public static void main(String[] args) throws InterruptedException {
 		System.out.println("Blocking Event in the calender");
 		System.setProperty("webdriver.chrome.driver","C:\\Jyothi\\drivers\\chromedriver.exe");
 		WebDriver driver;

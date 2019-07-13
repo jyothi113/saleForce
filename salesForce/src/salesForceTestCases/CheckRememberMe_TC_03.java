@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CheckRememberMe_TC_03 {
 	
-public static void main(String[] args) throws InterruptedException{
+	public static void main(String[] args) throws InterruptedException{
 		
 		System.out.println("RememberMe");
 		System.setProperty("webdriver.chrome.driver","C:\\Jyothi\\drivers\\chromedriver.exe");

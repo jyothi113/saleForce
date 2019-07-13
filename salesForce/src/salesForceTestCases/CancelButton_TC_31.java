@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CancelButton_TC_31 {
 
-	public static void main(String[] args) throws InterruptedException {
+		public static void main(String[] args) throws InterruptedException {
 		System.out.println("Cancel Button");
 		System.setProperty("webdriver.chrome.driver","C:\\Jyothi\\drivers\\chromedriver.exe");
 		WebDriver driver;
