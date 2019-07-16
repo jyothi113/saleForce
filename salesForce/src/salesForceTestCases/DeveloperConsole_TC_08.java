@@ -1,5 +1,8 @@
 package salesForceTestCases;
 
+import java.util.Set;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,8 +39,17 @@ public class DeveloperConsole_TC_08 {
 		WebElement DeveloperConsole = driver.findElement(By.xpath("//a[@class='debugLogLink menuButtonMenuLink']"));
 		DeveloperConsole.click();
 		System.out.println("DeveloperConsole page is displayed");
-		
-		
+		Thread.sleep(5000);
+		String parentWindow = driver.getWindowHandle();
+		Set<String> handles = driver.getWindowHandles();
+		for(String childWindow : handles){
+			if(!childWindow.equals(parentWindow))
+			{
+				driver.switchTo().window(childWindow);
+				driver.close();
+			}
+		}
+		driver.switchTo().window(parentWindow);
 		
 		
 	}
