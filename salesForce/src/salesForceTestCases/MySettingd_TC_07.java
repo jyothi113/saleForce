@@ -53,13 +53,13 @@ public class MySettingd_TC_07 {
 		WebElement CustomizeMyTabs = driver.findElement(By.xpath("//span[@id='CustomizeTabs_font']"));
 		CustomizeMyTabs.click();
 		
-		WebElement salesforceChatter = driver.findElement(By.xpath("//select[@id='p4']"));
-		salesforceChatter.click();
+	//	WebElement salesforceChatter = driver.findElement(By.xpath("//select[@id='duel_select_0']//option[contains(text(),'Chatter')]"));
+		//salesforceChatter.click();
 		
-//WebElement CustomApp = driver.findElement(By.xpath("//label[contains(text(),'Custom App:')]"));
+		WebElement CustomApp = driver.findElement(By.id("p4"));
 		
-		//Select CustomAppDropdown =new Select(CustomApp);
-		//CustomAppDropdown.selectByVisibleText("Salesforce Chatter");
+		Select CustomAppDropdown =new Select(CustomApp);
+		CustomAppDropdown.selectByVisibleText("Salesforce Chatter");
 		System.out.println("selected CustomApp");
 		
 		WebElement reports = driver.findElement(By.xpath("//option[contains(text(),'Reports')]"));
@@ -102,7 +102,7 @@ public class MySettingd_TC_07 {
 		WebElement RemindersButton = driver.findElement(By.xpath("//input[@id='testbtn']"));
 		RemindersButton.click();
 		
-		
+		Thread.sleep(5000);
 		driver.quit();
 		
 		
